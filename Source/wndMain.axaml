@@ -1,0 +1,17 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="600" d:DesignHeight="530"
+        x:Class="SealCrashHandler.wndMain"
+        Title="SealCrashHandler" Width="600" Height="530" CanResize="False">
+    <Grid>
+        <TextBlock x:Name="tblHeader" FontSize="20" Margin="23,18,0,0" FontWeight="DemiBold">header</TextBlock>
+        <TextBlock x:Name="tblDesc" FontSize="16" Margin="23,50,0,0">The app has encountered an unhandled exception and was forced to exit:</TextBlock>
+        <TextBlock x:Name="tblException" FontSize="16" Margin="23,72,0,0">exception</TextBlock>        
+        <TextBox x:Name="tbStacktrace" Width="550" Height="340" Margin="0,50,0,0" AcceptsReturn="True" IsReadOnly="True"></TextBox>
+        <Button x:Name="btnRestart" Width="175" Height="30" Margin="25,460,0,0" FontSize="14" HorizontalContentAlignment="Center" Click="btnRestart_Click">Restart</Button>
+        <Button x:Name="btnCopy" Width="175" Height="30" Margin="212,460,0,0" FontSize="14" HorizontalContentAlignment="Center" Click="btnCopy_Click">Copy</Button>
+        <Button x:Name="btnClose" Width="175" Height="30" Margin="400,460,0,0" FontSize="14" HorizontalContentAlignment="Center" Click="btnClose_Click">Close</Button>
+</Grid>
+</Window>

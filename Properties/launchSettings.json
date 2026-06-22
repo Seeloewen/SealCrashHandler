@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "SealCrashHandler": {
+      "commandName": "Project",
+      "commandLineArgs": "\"SeeloewenCraft\" \"a1.2.2_01\" \"Example Exception\" \"Example Stacktrace\" \"\""
+    }
+  }
+}
